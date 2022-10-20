@@ -1,0 +1,16 @@
+<div class="row mt-5">
+    <div class="col-md-4 mb-3" *ngFor="let feed of feedback">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">{{feed.id}}</h5>
+          <h5 class="card-title">{{feed.name}}</h5>
+          <p class="card-text">{{feed.designation}}</p>
+          <p class="card-text">{{feed.review}}</p>
+          <a href="#" class="btn btn-primary">Submit feedback</a>
+        </div>
+        <div class="card-footer text-muted">
+          {{feed.rating}}
+        </div>
+      </div>
+    </div>
+  </div>
